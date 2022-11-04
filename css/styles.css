@@ -191,7 +191,7 @@ p {
     max-height: 600px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     background-color: #C4C4C4;    
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/hero-bg.jpg);
@@ -265,14 +265,28 @@ p {
 .feachures-size::before {
     content: "";    
     height: 120px;
-    display: block;    
-    background-image: url(../img/icons.svg/feach-antenna.svg);
+    display: block;     
     background-repeat: no-repeat;
     background-color: #F5F4FA;
     border-radius: 4px;
     background-position: center;
-    background-size: 70px 70px;
-    
+    background-size: 70px 70px;    
+}
+
+.icon-antenna::before {
+    background-image: url(../img/icons.svg/feach-antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../img/icons.svg/feah-clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../img/icons.svg/feach-diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../img/icons.svg/feach-astronaut.svg);
 }
 
 .feachures-box {
@@ -455,8 +469,13 @@ p {
     margin-left: 0px;
 }
 
+.works-box:hover,
+.works-box:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .works-image {
-    display: block;    
+    display: block;      
 }
 
 .works-title {        
@@ -481,7 +500,6 @@ p {
     padding-left: 24px;
     border: 1px solid #EEEEEE;
 }
-
 
 /* Footer style */
 
