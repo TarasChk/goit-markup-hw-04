@@ -138,6 +138,7 @@ p {
     padding-top: 32px;
     padding-bottom: 32px;
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     fill: #757575;
 }
@@ -180,7 +181,8 @@ p {
     color: var(--second-elements-color);
 }
 
-.icon-contact {   
+.icon-contact {  
+    fill: currentColor; 
     margin-right: 10px;
     
 }
@@ -290,45 +292,45 @@ p {
     background-image: url(../img/icons.svg/feach-antenna.svg);
 }
 
-.icon-antenna:hover::before,
+/* .icon-antenna:hover::before,
 .icon-antenna:focus::before {
     border: 1px solid #000000;
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 
 .icon-clock::before {
     background-image: url(../img/icons.svg/feah-clock.svg);
 }
 
-.icon-clock:hover::before,
+/* .icon-clock:hover::before,
 .icon-clock:focus::before {
     border: 1px solid #000000;
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 
 .icon-diagram::before {
     background-image: url(../img/icons.svg/feach-diagram.svg);
 }
 
-.icon-diagram:hover::before,
+/* .icon-diagram:hover::before,
 .icon-diagram:focus::before {
     border: 1px solid #000000;
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 
 .icon-astronaut::before {
     background-image: url(../img/icons.svg/feach-astronaut.svg);
 }
 
-.icon-astronaut:hover::before,
+/* .icon-astronaut:hover::before,
 .icon-astronaut:focus::before {
     border: 1px solid #000000;
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 
 .feachures-size::before:hover {
     border: 1px solid #000000;
@@ -406,9 +408,7 @@ p {
 }
 
 .team-image-box {
-    margin-right: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    margin-right: 30px;    
 }
 
 .team-image-box:last-child {
@@ -443,6 +443,8 @@ p {
     background: var(--main-background-color);    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-right: 32px;
+    padding-left: 32px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -451,26 +453,41 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 30px;
+    padding: 0;
+    margin: 0;  
 }
 
+.action-margin {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
 
 .icon {
-    margin-right: 10px;
-    fill: #AFB1B8;         
-}
-
-.icon:hover {
-    background: #2196F3;
-    width: 40px;
-    height: 40px;    
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    margin-right: 10px;    
+    fill: currentColor;
+    color: #AFB1B8;         
 }
 
 .icon:last-child {
     margin-right: 0px;
 }
+
+
+.icon-net {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.icon-net:hover {
+        color: #FFFFFF;
+        background: #2196F3;
+}
+
 
 /* Clients style */
 
@@ -491,14 +508,22 @@ p {
     padding-bottom: 94px;
 }
 
-.clients-icon {
-    fill: #AFB1B8;
-    margin-right: 30px;
+.icon-border {
     box-sizing: border-box;
     width: 170px;
-    height: 92px;   
+    height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+}
+
+.icon-link {
+    width: 100%;
+    height: 100%;
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+    margin-right: 30px;           
 }
 
 .clients-icon:last-child {
@@ -623,6 +648,15 @@ p {
     background-color: var(--second-background-color);
 }  
 
+.footer-net {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contact {
+    margin-right: 70px;
+}
+
 .logo-footer {
     display: inline-block;   
     margin-bottom: 20px;
@@ -675,16 +709,14 @@ p {
 }
 
 .net {
-flex-wrap: wrap;
-align-items: flex-start;
-align-content: center;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    align-items: flex-start;    
+    align-content: center;
 
 }
 
 .net-title {
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
@@ -693,8 +725,31 @@ align-content: center;
 }
 
 .net-list {
-    display: flex;    
+    display: flex;
+    padding-left: 0px;       
 }
 
+.net-icon {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.footer-icon {
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+    color: #FFFFFF;
+}
+
+.net-icon:last-child {
+    margin-right: 0px;
+}
+
+.footer-icon:hover {
+    background-color: var(--accent-elements-color);
+}
 
 /* style="fill:var(--color2, #2196f3)" */
